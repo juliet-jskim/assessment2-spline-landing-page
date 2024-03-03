@@ -1,13 +1,13 @@
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 2em;
-    padding-left: 5em;
-    padding-right: 5em;
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2em;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 .headerLinks {
@@ -20,8 +20,22 @@
   line-height: normal;
 }
 
-.navigationLinks{
+.navigationLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+/** Mobile */
+@media (max-width: 414px) {
+  .main {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: row;
-    gap: 2em;
+    width: 84%;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 0;
+  }
 }

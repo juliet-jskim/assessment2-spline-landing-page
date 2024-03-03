@@ -1,74 +1,75 @@
-.featuresContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5em;
-}
-
-.card {
-  border-radius: 25px;
-  background: #fff;
-  box-shadow: 2.525px 5.05px 10.942px 0px rgba(120, 120, 120, 0.26);
-  width: 305px;
-  height: 450px;
-  display: grid;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cardContents {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-self: center;
-}
-
-.header5 {
-  color: #1e1e1e;
-  text-align: center;
-  font-family: Gilroy-SemiBold;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.pText {
-  color: rgba(48, 48, 54, 0.5);
-  text-align: center;
-  font-family: "Apfel Grotezk";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 236px;
-}
-
-.featurestext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  position: relative;
-}
-
-
-/** Tablet */
-@media (max-width: 820px) {
+@media (min-width: 1440px) {
   .featuresContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3em;
+    gap: 5em;
   }
 
   .card {
     border-radius: 25px;
     background: #fff;
     box-shadow: 2.525px 5.05px 10.942px 0px rgba(120, 120, 120, 0.26);
-    width: 230px;
-    height: 370px;
+    width: 330px;
+    height: 450px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardContents {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .header5 {
+    color: #1e1e1e;
+    text-align: center;
+    font-family: Gilroy-SemiBold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .pText {
+    color: rgba(48, 48, 54, 0.5);
+    text-align: center;
+    font-family: "Apfel Grotezk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 236px;
+  }
+
+  .featurestext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    position: relative;
+  }
+}
+
+/** Tablet */
+@media (max-width: 820px) {
+  .featuresContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  
+  .card {
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 2.525px 5.05px 10.942px 0px rgba(120, 120, 120, 0.26);
+    width: 330px;
+    height: 450px;
     display: grid;
     flex-direction: column;
     align-items: center;
@@ -111,3 +112,5 @@
     position: relative;
   }
 }
+
+/** Mobile */

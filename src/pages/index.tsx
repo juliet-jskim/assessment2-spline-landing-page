@@ -36,7 +36,7 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.rightColumn}>
-          <Spline scene="https://prod.spline.design/lYlnWk1xznFelUrO/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/lYlnWk1xznFelUrO/scene.splinecode" />
         </div>
       </section>
       <section id="about" className={styles.descriptionContainer}>
@@ -69,8 +69,7 @@ export default function Home() {
             Your essential travel toolkit
           </h2>
           <h4
-            className={styles.header4}
-            style={{ width: "28em", marginTop: "2em" }}
+            className={styles.header4Features}
           >
             Introducing your itinerary planning to personalized recommendations
             catered to your preferences
@@ -98,7 +97,7 @@ export default function Home() {
               height={128}
             />
             <Image
-              className={styles.reviewComments}
+              className={styles.reviewComments2}
               src={"/review-2.png"}
               alt="orbit components"
               width={413}

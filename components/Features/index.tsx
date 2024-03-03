@@ -8,7 +8,7 @@ export default function Features() {
         <section className={styles.card}>
           <div className={styles.cardContents}>
             <div className={styles.spline}>
-              <Spline scene="https://prod.spline.design/AyYqJkLWhnb3yVKz/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/AyYqJkLWhnb3yVKz/scene.splinecode" />
             </div>
             <div className={styles.featurestext}>
               <h5 className={styles.header5}>Real-time results</h5>
@@ -36,7 +36,7 @@ export default function Features() {
         <section className={styles.card}>
           <div className={styles.cardContents}>
             <div className={styles.spline}>
-              <Spline id="spline"scene="https://prod.spline.design/OCjDAQfzfPeC09i1/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/OCjDAQfzfPeC09i1/scene.splinecode" />
             </div>
             <div className={styles.featurestext}>
               <h5 className={styles.header5}>

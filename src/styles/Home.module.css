@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
+  margin-top: 15em;
   justify-content: center;
   gap: 2em;
 }
@@ -137,6 +138,19 @@
   width: 460px;
 }
 
+.header4Features {
+  color: var(--black);
+  text-align: justify;
+  width: 28em;
+  font-family: "Apfel Grotezk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 2em;
+  margin-right: 4em;
+}
+
 .header5 {
   color: #413eea;
   font-family: Gilroy-Bold;
@@ -187,6 +201,10 @@
 }
 
 .reviewComments {
+  filter: drop-shadow(0px 4px 13px rgba(94, 94, 94, 0.25));
+}
+
+.reviewComments2 {
   filter: drop-shadow(0px 4px 13px rgba(94, 94, 94, 0.25));
 }
 
@@ -273,21 +291,20 @@
 @media (max-width: 820px) {
   /** header **/
   .headerContainer {
+    width: 20em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10em;
   }
   .headerLeftColumn {
     z-index: 2;
+    position: relative;
+    bottom: 20em;
+    right: 8em;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 12em;
-    top: 3em;
     justify-content: center;
-    gap: 2em;
   }
 
   .headerTextContainer {
@@ -341,7 +358,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10em;
+    position: relative;
+    bottom: 45em;
+    gap: 5em;
   }
 
   .descriptionLeftColumn {
@@ -349,7 +368,7 @@
     flex-direction: column;
     align-items: center;
     width: 380px;
-    gap: 2em;
+    gap: 1em;
     position: relative;
     left: 3em;
   }
@@ -358,7 +377,7 @@
     font-family: Gilroy-ExtraBold;
     font-size: 30px;
     font-style: normal;
-    width: 12em;
+    width: 15em;
     position: relative;
     left: 2em;
     font-weight: 400;
@@ -376,13 +395,14 @@
   .header4 {
     color: var(--black);
     text-align: justify;
-    width: 16em;
+    width: 17em;
     font-family: "Apfel Grotezk";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     margin-top: 1em;
+    margin-right: 4em;
   }
   .splinePhone {
     position: relative;
@@ -395,46 +415,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10em;
     gap: 3em;
+    position: relative;
+    bottom: 50em;
   }
 
-  .featuresHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-  }
-
-  .header2Features {
-    font-family: Gilroy-ExtraBold;
-    font-size: 30px;
+  .header4Features {
+    color: var(--black);
+    text-align: justify;
+    width: 17em;
+    font-family: "Apfel Grotezk";
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    background: linear-gradient(
-      94deg,
-      rgba(65, 62, 234, 0.78) -18.59%,
-      rgba(255, 54, 77, 0.33) 114.52%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .header5 {
-    color: #413eea;
-    font-family: Gilroy-Bold;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-bottom: 2em;
+    line-height: 20px;
+    margin-top: 1em;
+    margin-right: 4em;
   }
 
   /** reviews **/
+  .review {
+    position: relative;
+    bottom: 40em;
+  }
   .header2Reviews {
     font-family: Gilroy-ExtraBold;
     font-size: 30px;
@@ -453,5 +456,234 @@
 }
 
 /** Mobile */
-@media (max-width: 390px) {
+@media (max-width: 414px) {
+  /** header **/
+  .headerContainer {
+    width: 20em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerLeftColumn {
+    z-index: 2;
+    position: relative;
+    bottom: 15em;
+    left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .headerTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .header1 {
+    color: #413eea;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 260px;
+  }
+
+  .header3 {
+    color: #7c7bbf;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 300px;
+  }
+
+  .button {
+    background: var(--dark-blue);
+    display: flex;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px 0px rgba(62, 59, 85, 0.26);
+    color: #fff;
+    font-family: Gilroy-medium;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  /** description **/
+  .descriptionContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 28em;
+    left: 5em;
+    gap: 6em;
+  }
+
+  .descriptionLeftColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    gap: 1em;
+    left: -6em;
+    position: relative;
+  }
+
+  .header2 {
+    font-family: Gilroy-ExtraBold;
+    font-size: 20px;
+    font-style: normal;
+    width: 15em;
+    position: relative;
+    left: 2em;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(
+      94deg,
+      rgba(65, 62, 234, 0.78) -18.59%,
+      rgba(255, 54, 77, 0.33) 114.52%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header4 {
+    color: var(--black);
+    text-align: justify;
+    width: 17em;
+    font-family: "Apfel Grotezk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 1em;
+    margin-left: 5em;
+  }
+  .splinePhone {
+    position: relative;
+    right: 4em;
+  }
+
+  /** features **/
+
+  .componentsImage {
+    width: 75%;
+  }
+
+  .featuresHeader {
+    margin-top: 10em;
+  }
+
+  .header5 {
+    font-size: 10px;
+  }
+
+  .header2Features {
+    font-size: 20px;
+  }
+
+  .header4Features {
+    color: var(--black);
+    text-align: justify;
+    width: 18em;
+    font-family: "Apfel Grotezk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 1em;
+    line-height: 20px;
+    /* margin-top: 1em; */
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    position: relative;
+    bottom: 20em;
+  }
+
+  /** Reviews **/
+  .review {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 15em;
+  }
+  .header2Reviews {
+    font-family: Gilroy-ExtraBold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(
+      94deg,
+      rgba(65, 62, 234, 0.78) -18.59%,
+      rgba(255, 54, 77, 0.33) 114.52%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header4Reviews {
+    color: var(--black);
+    text-align: justify;
+    width: 18em;
+    font-family: "Apfel Grotezk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 1em;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .reviewComments {
+    width: 90%;
+  }
+  .reviewComments2 {
+    width: 60%;
+  }
+  .review1 {
+    margin-left: 2em;
+  }
+  .review2 {
+    margin-right: 2em;
+  }
+
+  /** Newsletter **/
+
+  .header6 {
+    color: var(--black);
+    text-align: left;
+    font-family: Gilroy-ExtraBold;
+    font-size: 20px;
+    position: relative;
+    bottom: 5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 300px;
+  }
 }
